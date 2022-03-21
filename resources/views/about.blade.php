@@ -1,6 +1,16 @@
-<p>How much all avengers love you?</p>
-<p>They love you {{ 300 * 6 }}</p>
-<p>But tony is dead and cap is not more active!</p>
-<p>They now love you {{ 300 * (6 - 2) }}</p>
-<?php $red_skull = "In order to take the stone, you must lose that what you love.";?>
-<p>{{ str_replace('that what you love.', 'Gamora', $red_skull) }}</p>
+@extends('base')
+
+@section('title', 'Homepage')
+
+@section('body')
+
+    <h1>About us</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum pariatur doloremque voluptate deleniti iure ut recusandae fugit? Debitis repudiandae id ut. Libero soluta ut reiciendis iste, laborum assumenda explicabo culpa!</p>
+
+@endsection
+
+@section('styles')
+    h1 {
+        background: green;
+    }
+@endsection
