@@ -24,3 +24,9 @@ Route::prefix('account')->group(function() {
     Route::get('register', [AccountsController::class, 'getRegisterPage'])->name('get-accounts-register-page');
 
 });
+
+Route::prefix('student')->group(function() {
+
+    Route::get('view-all-students', [StudentController::class, 'getListOfAllStudents'])->name('get-list-of-all-students');
+
+});
