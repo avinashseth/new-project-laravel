@@ -14,5 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    echo 'Hello World!';
 });
+
+Route::get('welcome/{name}', function($name) {
+
+    echo 'Hi, ' . $name;
+
+});
+
+
+Route::get('verify-vote/{age}', function($age) {
+
+    return view('home', compact('age'));
+
+});
+
