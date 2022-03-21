@@ -13,41 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    echo 'Hello World!';
-});
-
-Route::get('welcome/{name}', function($name) {
-
-    echo 'Hi, ' . $name;
-
-});
-
-
-Route::get('verify-vote/{age}', function($age) {
-
-    return view('home', compact('age'));
-
-});
-
-Route::get('check', function() {
-
-    $name = "<script>alert('hacked');</script>";
-
-    return view('welcome', compact('name'));
-
-});
-
-Route::get('more-about-blade', function() {
-
-    return view('about');
-
-});
-
-Route::get('list-avengers', function() {
-
-    $avengers = ['Cap','Spider Man','Iron Man','Hulk','Black Panther','Hawk eye','Black widow'];
-
-    return view('list-avengers', compact('avengers'));
-
-});
+Route::redirect('/facebook', 'https://facebook.com/zuck');
