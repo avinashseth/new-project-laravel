@@ -14,3 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::redirect('/facebook', 'https://facebook.com/zuck');
+
+// Route::get('about', function() {
+
+//     return view('about');
+
+// });
+
+Route::view('about', 'about');
